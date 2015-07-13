@@ -1,3 +1,14 @@
 /public/.htaccess
 init.*.php
 vendor
+
+# Ignore Eclipse/Zend Studio project files
+.buildpath
+.project
+.settings
+
+# Ignore PhpStorm files
+.idea
+
+# Ignore local changes made on file init.example.php
+init.example.php
