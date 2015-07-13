@@ -184,6 +184,7 @@ $(window).on("resize", function () {
 
 // Login Submit Button Disable
 $('#login input[type=text], #login input[type=password]').on('input', function() {
+    return; // Don't magically enable/disable submit buttons so that to make the login form friendly with Roboform.
     if($('#login input[type=text]').val() != '' && $('#login input[type=password]').val() != '') {
         $("#login input[type=submit]").removeAttr("disabled");
     } else {
